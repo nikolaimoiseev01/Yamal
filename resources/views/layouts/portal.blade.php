@@ -24,7 +24,7 @@
 {{--    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>--}}
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/scss/portal.scss', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="flex flex-col min-h-screen !scroll-smooth">
 <livewire:components.header/>
