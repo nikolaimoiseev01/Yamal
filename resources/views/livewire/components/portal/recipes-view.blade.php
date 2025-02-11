@@ -15,16 +15,16 @@
 
         <div class="flex gap-5 mb-8 text-lg items-center flex-wrap">
             @foreach($recipeTypes as $type)
-                <div class="relative h-12">
+                <div class="relative">
                     <input type="radio" class="hidden peer" name="recipe_type" value="{{$type['id']}}"
                            id="recipe_type_{{$type['id']}}" wire:model.live="recipe_type">
-                    <label for="recipe_type_{{$type['id']}}"
+                    <label for="block recipe_type_{{$type['id']}}"
                            class="border border-gray-300 py-3 px-10 rounded-40 transition cursor-pointer peer-checked:bg-bright-500 hover:bg-bright-500">
                         {{ mb_strtolower($type['name']) }}
                     </label>
                 </div>
             @endforeach
-                <a href="" class="h-12 border border-gray-300 py-3 px-10 flex gap-3 items-center justify-center rounded-40 transition cursor-pointer bg-bright-500 hover:bg-bright-500">
+                <a href="" class="border border-gray-300 py-3 px-10 flex gap-3 items-center justify-center rounded-40 transition cursor-pointer bg-bright-500 hover:bg-bright-500">
                     <x-heroicon-o-arrow-long-down class="w-6" />
                     Скачать книгу рецептов
                 </a>
