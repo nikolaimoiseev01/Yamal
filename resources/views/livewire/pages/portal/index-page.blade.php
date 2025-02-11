@@ -76,7 +76,7 @@
                     Без добавок, химикатов и ГМО — только натуральные продукты с превосходным вкусом — наш принцип.</p>
             </div>
             <div class="max-w-[556px] h-[424px] w-full  rounded-[20px] overflow-hidden relative flex items-center justify-center">
-                <div id="video_cover" style="background-image: url('/fixed/video_cover.jpg')"
+                <div id="video_cover" style="background-image: url('/fixed/video_cover.png')"
                      class="w-full z-20 bg-cover absolute flex items-center justify-center bottom-0 top-0 h-full">
                     <div @click="playVideo('manufactured_video')" class="flex items-center justify-center bg-bright-500 p-5 bg-opacity-80 rounded-full">
                         <x-heroicon-s-play class="w-9"></x-heroicon-s-play>
