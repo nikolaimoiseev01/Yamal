@@ -2,8 +2,8 @@
 
 namespace App\Livewire\Components\Portal;
 
-use App\Models\recipe;
-use App\Models\recipeType;
+use App\Models\Recipe;
+use App\Models\RecipeType;
 use Livewire\Component;
 
 class RecipesView extends Component
