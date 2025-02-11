@@ -15,7 +15,7 @@
 
         <div class="flex gap-5 mb-8 text-lg flex-wrap">
             @foreach($productTypes as $type)
-                <div class="relative h-12">
+                <div class="relative block">
                     <input type="radio" class="hidden peer" name="product_type" value="{{$type['id']}}"
                            id="product_type_{{$type['id']}}" wire:model.live="product_type">
                     <label for="product_type_{{$type['id']}}"
