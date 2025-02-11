@@ -24,7 +24,7 @@
                     </label>
                 </div>
             @endforeach
-                <a href="" class="border border-gray-300 py-3 px-10 flex gap-3 items-center justify-center rounded-40 transition cursor-pointer bg-bright-500 hover:bg-bright-500">
+                <a href="" class="h-12 border border-gray-300 py-3 px-10 flex gap-3 items-center justify-center rounded-40 transition cursor-pointer bg-bright-500 hover:bg-bright-500">
                     <x-heroicon-o-arrow-long-down class="w-6" />
                     Скачать книгу рецептов
                 </a>
