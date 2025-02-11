@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --swiper-theme-color: #141414 !important;
+}
+
+
+body {
+    font-size: 16px;
+    line-height: normal;
+    padding: 0;
+    @media (max-width: 1023px) {
+        font-size: 14px;
+    }
+}
+
+h2 {
+    @apply text-[40px] font-medium;
+}
+
+p {
+    @apply text-xl md:text-base
+}
+
+a {
+    @apply cursor-pointer;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    @apply border-gray-300 text-black-500 shadow-sm outline-none ring-0 focus:ring-0 cursor-pointer;
+}
+
+input[type="radio"] {
+    @apply w-6 h-6;
+}
+
+input[type="checkbox"] {
+    @apply w-4 h-4;
+}
+
+input[type="text"] {
+    @apply rounded-[20px] border border-gray-300 focus:border-gray-500 outline-none !ring-0;
+}
+
+textarea {
+    @apply rounded-[20px] border border-gray-300 focus:border-gray-500 outline-none !ring-0 p-9;
+}
+
+.safe-area-wrap {
+    @apply w-[90%] max-w-8xl mx-auto;
+}
+
+.content {
+    @apply max-w-6xl mx-auto w-[90%];
+}

@@ -1,0 +1,22 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-D8y-AQqc.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CmSr1-M1.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-DV8PrLMj.css"
+    ]
+  },
+  "resources/scss/portal.scss": {
+    "file": "assets/portal-l0sNRNKZ.js",
+    "name": "portal",
+    "src": "resources/scss/portal.scss",
+    "isEntry": true
+  }
+}
