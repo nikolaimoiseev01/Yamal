@@ -39,7 +39,7 @@
     <!-- Выезжающая карточка -->
     <div
         x-show="show"
-        class="bg-white dark:bg-gray-800 shadow-xl h-screen max-w-96 md:max-w-none w-full transform transition-transform"
+        class="bg-white shadow-xl h-screen max-w-96 md:max-w-none w-full transform transition-transform"
         x-transition:enter="ease-out duration-300"
         x-transition:enter-start="translate-x-full"
         x-transition:enter-end="translate-x-0"
