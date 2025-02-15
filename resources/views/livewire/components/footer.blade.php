@@ -1,5 +1,5 @@
 <footer class="bg-black-500 safe-area-wrap text-bright-500 rounded-44">
-    <div class="content flex gap-16 py-16 md:flex-col md:text-center md:items-center">
+    <div class="content flex items-start gap-16 py-16 md:flex-col md:text-center md:items-center">
         <x-logo-main-white/>
         <div class="flex flex-col gap-6">
             <p>КОНТАКТЫ</p>

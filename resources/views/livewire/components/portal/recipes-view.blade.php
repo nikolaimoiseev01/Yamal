@@ -31,7 +31,5 @@
         </div>
         <x-ui.recipe-slider :recipes="$recipes"/>
     </div>
-    @foreach($recipes as $key => $recipe)
-        <x-cards.recipe-right-card :recipe="$recipe" :key="$key"/>
-    @endforeach
+    <livewire:components.cards.recipe-right-card/>
 </section>

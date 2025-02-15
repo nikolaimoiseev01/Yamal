@@ -5,7 +5,7 @@
              md:w-full md:p-9 md:items-center md:min-h-0
              ">
             <div class="flex items-start flex-col justify-center gap-6 ">
-                <h1 class="text-6xl leading-[78px] xl:text-5xl text-4xl md:text-[40px] md:!leading-[58px] md:font-medium">Ямал Гурмэ -<br>деликатесы<br>с края земли</h1>
+                <h1 class="text-6xl leading-[78px] xl:text-5xl md:text-[40px] md:!leading-[58px] sm:!text-[34px] sm:!leading-[40px] md:font-medium">Ямал Гурмэ -<br>деликатесы<br>с края земли</h1>
                 <p>«Ямал Гурмэ» — это продукты<br>
                     сурового севера, редкие<br>
                     и уникальные.<br>

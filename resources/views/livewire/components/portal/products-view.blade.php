@@ -27,7 +27,5 @@
         </div>
         <x-ui.product-slider :products="$products"/>
     </div>
-    @foreach($products as $key => $product)
-        <x-cards.product-right-card :product="$product" :key="$key"/>
-    @endforeach
+    <livewire:components.cards.product-right-card/>
 </section>

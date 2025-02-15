@@ -5,7 +5,8 @@
         <div class="swiper-lazy-preloader text-black-500"></div>
     </div>
     <p class="text-lg font-medium mb-4 px-4">{{$recipe['name']}}</p>
-    <a x-on:click="$dispatch('open-right-card', 'recipe-{{$recipe['id']}}-right-card')" class="w-full bg-gray-300 py-2 px-5 flex gap-4 rounded-[20px] items-center justify-center">
+    <a x-on:click="$dispatch('open-right-card', 'recipe-right-card'); updateRecipeRightCard({{$recipe['id']}});"
+       class="w-full bg-gray-300 py-2 px-5 flex gap-4 rounded-[20px] items-center justify-center">
         Подробнее
         <svg width="64" height="8" viewBox="0 0 64 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M63.3536 4.35355C63.5488 4.15829 63.5488 3.84171 63.3536 3.64645L60.1716 0.464466C59.9763 0.269204 59.6597 0.269204 59.4645 0.464466C59.2692 0.659728 59.2692 0.976311 59.4645 1.17157L62.2929 4L59.4645 6.82843C59.2692 7.02369 59.2692 7.34027 59.4645 7.53553C59.6597 7.7308 59.9763 7.7308 60.1716 7.53553L63.3536 4.35355ZM0 4.5H63V3.5H0V4.5Z" fill="#141414"/>
