@@ -1,6 +1,6 @@
 <div lazy="true" wire:key="{{$recipe['id']}}"
     {{ $attributes->merge(['class' => 'flex flex-col py-6 px-5 bg-bright-500 w-fit sm:mx-auto rounded-36'])}}>
-    <div class="w-72 h-52 mb-2 mx-auto overflow-hidden rounded-xl">
+    <div class="w-72 h-52 mb-2 mx-auto overflow-hidden rounded-xl  max-w-full">
         <img loading="lazy" src="{{$recipe->getFIrstMediaUrl('image')}}" class="w-full h-full object-cover" alt="">
         <div class="swiper-lazy-preloader text-black-500"></div>
     </div>

@@ -5,12 +5,12 @@
              md:w-full md:p-9 md:items-center md:min-h-0
              ">
             <div class="flex items-start flex-col justify-center gap-6 ">
-                <h1 class="text-6xl leading-[78px] xl:text-5xl md:text-[40px] md:!leading-[58px] sm:!text-[34px] sm:!leading-[40px] md:font-medium">Ямал Гурмэ -<br>деликатесы<br>с края земли</h1>
+                <h1 class="text-6xl leading-[78px] xl:text-5xl md:text-[40px] md:!leading-[58px] sm:!text-[34px] sm:!leading-[40px] md:font-medium">Ямал Гурмэ —<br>деликатесы<br>с края земли</h1>
                 <p>«Ямал Гурмэ» — это продукты<br>
                     сурового севера, редкие<br>
                     и уникальные.<br>
                     Мы собрали лучшие из них.</p>
-                <x-link href="#products">Купить</x-link>
+                <x-link class="sm:!w-full" href="#products">Купить</x-link>
             </div>
 
         </div>
@@ -44,10 +44,9 @@
         </div>
     </section>
 
-
     <section id="about" class="safe-area-wrap relative bg-black-500 text-bright-500 rounded-44 mb-20">
         <img src="/fixed/about_map.png" class="absolute h-full right-12 z-0 md:hidden" alt="">
-        <div class="content py-10 flex justify-between relative md:flex-col gap-10">
+        <div class="content py-10 flex justify-between relative md:flex-col gap-10 sm:px-10 sm:!w-full">
             <div class="pt-14 md:pt-0">
                 <h2 class="mb-9">О бренде</h2>
                 <p class="max-w-md">«Ямал Гурме» — бренд для ценителей уникальных вкусов и ярких
@@ -58,9 +57,9 @@
                     Весь ассортимент проходит строжайший контроль качества на всех этапах производства в
                     собственной лаборатории.</p>
             </div>
-            <div class="flex flex-col gap-9 md:flex-row justify-center">
-                <img src="/fixed/deers_2.png" class="w-80 h-80 rounded-[20px] object-cover lg:aspect-square md:w-48 sm:!w-32 md:h-auto" alt="">
-                <img src="/fixed/nature_1.png" class="w-80 h-80 rounded-[20px] object-cover lg:aspect-square md:w-48 sm:!w-32 md:h-auto" alt="">
+            <div class="flex flex-col gap-9 md:flex-row sm:!flex-col sm:items-center justify-center">
+                <img src="/fixed/deers_2.png" class="w-80 h-80 rounded-[20px] object-cover lg:aspect-square md:w-48 md:h-auto" alt="">
+                <img src="/fixed/nature_1.png" class="w-80 h-80 rounded-[20px] object-cover lg:aspect-square md:w-48 md:h-auto" alt="">
             </div>
         </div>
     </section>

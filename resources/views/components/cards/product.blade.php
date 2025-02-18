@@ -1,6 +1,6 @@
 <div lazy="true" wire:key="{{$product['id']}}"
     {{ $attributes->merge(['class' => 'flex flex-col py-6 px-10 bg-bright-500 w-fit sm:mx-auto rounded-36'])}}>
-    <div class="w-56 h-56 mb-2 mx-auto">
+    <div class="w-56 h-56 mb-2 mx-auto max-w-full">
         <img loading="lazy" src="{{$product->getFIrstMediaUrl('image')}}" class="w-full" alt="">
         <div class="swiper-lazy-preloader text-black-500"></div>
     </div>

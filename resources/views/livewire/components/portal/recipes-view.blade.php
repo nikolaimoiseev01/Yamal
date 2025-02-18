@@ -19,7 +19,7 @@
                     <input type="radio" class="hidden peer" name="recipe_type" value="{{$type['id']}}"
                            id="recipe_type_{{$type['id']}}" wire:model.live="recipe_type">
                     <label for="block recipe_type_{{$type['id']}}"
-                           class="border border-gray-300 py-3 px-10 rounded-40 transition cursor-pointer peer-checked:bg-bright-500 hover:bg-bright-500">
+                           class="block border border-gray-300 py-3 px-10 rounded-40 transition cursor-pointer peer-checked:bg-bright-500 hover:bg-bright-500">
                         {{ mb_strtolower($type['name']) }}
                     </label>
                 </div>
