@@ -55,15 +55,13 @@ class RecipeResource extends Resource
                                     ->required()
                                     ->label('Метод приготовления')
                                     ->columnSpanFull(),
-                            ]),
-                        Tabs\Tab::make('Обложка')
-                            ->schema([
                                 Forms\Components\SpatieMediaLibraryFileUpload::make('image')
                                     ->collection('image')
                                     ->image()
                                     ->reorderable()
                                     ->label('')
                                     ->imageEditor()
+                                    ->panelLayout('grid')
                                     ->imageEditorMode(2)
                                     ->label('')
                                     ->imageCropAspectRatio('460:280')

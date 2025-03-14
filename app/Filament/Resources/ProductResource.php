@@ -32,6 +32,7 @@ class ProductResource extends Resource
                             ->schema([
                                 Forms\Components\Grid::make()->schema([
                                     Forms\Components\TextInput::make('name')
+                                        ->label('Название')
                                         ->required()
                                         ->columnSpan(3)
                                         ->maxLength(255),
@@ -43,33 +44,38 @@ class ProductResource extends Resource
                                 ])->columns(4),
                                 Forms\Components\Grid::make()->schema([
                                     Forms\Components\TextInput::make('packaging')
+                                        ->label('Тип упаковки')
                                         ->required()
                                         ->maxLength(255),
                                     Forms\Components\TextInput::make('weight')
+                                        ->label('Вес')
                                         ->required()
                                         ->maxLength(255),
                                     Forms\Components\TextInput::make('gost')
+                                        ->label('ГОСТ')
                                         ->required()
                                         ->maxLength(255),
                                 ])->columns(3),
                                 Forms\Components\Grid::make()->schema([
                                     Forms\Components\Textarea::make('compound')
+                                        ->label('Состав')
                                         ->required(),
                                     Forms\Components\Textarea::make('description')
+                                        ->label('Описание')
                                         ->required(),
                                     Forms\Components\Textarea::make('worth')
+                                        ->label('Пищевая ценность')
                                         ->required(),
                                 ])->columns(3),
                                 Forms\Components\Grid::make()->schema([
                                     Forms\Components\TextInput::make('date_manufactured')
                                         ->required()
+                                        ->label('Дата производства')
                                         ->maxLength(255),
                                     Forms\Components\TextInput::make('expiration')
+                                        ->label('Срок годности')
                                         ->required(),
-                                ])->columns(2)
-                            ]),
-                        Tabs\Tab::make('Обложка')
-                            ->schema([
+                                ])->columns(2),
                                 Forms\Components\SpatieMediaLibraryFileUpload::make('image')
                                     ->collection('image')
                                     ->image()
@@ -78,6 +84,7 @@ class ProductResource extends Resource
                                     ->imageEditor()
                                     ->imageEditorMode(2)
                                     ->label('')
+                                    ->panelLayout('grid')
                                     ->imageCropAspectRatio('460:280')
                                     ->columnSpan(1),
                             ])

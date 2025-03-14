@@ -1,0 +1,21 @@
+// vite.config.js
+import Alpine from "alpinejs";
+import { defineConfig } from "file:///S:/Work/Projects/Yamal/Yamal/node_modules/vite/dist/node/index.js";
+import laravel from "file:///S:/Work/Projects/Yamal/Yamal/node_modules/laravel-vite-plugin/dist/index.js";
+window.Alpine = Alpine;
+Alpine.start();
+var vite_config_default = defineConfig({
+  plugins: [
+    laravel({
+      input: [
+        "resources/css/app.css",
+        "resources/js/app.js"
+      ],
+      refresh: true
+    })
+  ]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcuanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJTOlxcXFxXb3JrXFxcXFByb2plY3RzXFxcXFlhbWFsXFxcXFlhbWFsXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ZpbGVuYW1lID0gXCJTOlxcXFxXb3JrXFxcXFByb2plY3RzXFxcXFlhbWFsXFxcXFlhbWFsXFxcXHZpdGUuY29uZmlnLmpzXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ltcG9ydF9tZXRhX3VybCA9IFwiZmlsZTovLy9TOi9Xb3JrL1Byb2plY3RzL1lhbWFsL1lhbWFsL3ZpdGUuY29uZmlnLmpzXCI7aW1wb3J0IEFscGluZSBmcm9tICdhbHBpbmVqcydcbmltcG9ydCB7IGRlZmluZUNvbmZpZyB9IGZyb20gJ3ZpdGUnO1xuaW1wb3J0IGxhcmF2ZWwgZnJvbSAnbGFyYXZlbC12aXRlLXBsdWdpbic7XG5cbndpbmRvdy5BbHBpbmUgPSBBbHBpbmVcbkFscGluZS5zdGFydCgpXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoe1xuICAgIHBsdWdpbnM6IFtcbiAgICAgICAgbGFyYXZlbCh7XG4gICAgICAgICAgICBpbnB1dDogW1xuICAgICAgICAgICAgICAgICdyZXNvdXJjZXMvY3NzL2FwcC5jc3MnLFxuICAgICAgICAgICAgICAgICdyZXNvdXJjZXMvanMvYXBwLmpzJyxcbiAgICAgICAgICAgIF0sXG4gICAgICAgICAgICByZWZyZXNoOiB0cnVlLFxuICAgICAgICB9KSxcbiAgICBdLFxufSk7XG4iXSwKICAibWFwcGluZ3MiOiAiO0FBQWdSLE9BQU8sWUFBWTtBQUNuUyxTQUFTLG9CQUFvQjtBQUM3QixPQUFPLGFBQWE7QUFFcEIsT0FBTyxTQUFTO0FBQ2hCLE9BQU8sTUFBTTtBQUNiLElBQU8sc0JBQVEsYUFBYTtBQUFBLEVBQ3hCLFNBQVM7QUFBQSxJQUNMLFFBQVE7QUFBQSxNQUNKLE9BQU87QUFBQSxRQUNIO0FBQUEsUUFDQTtBQUFBLE1BQ0o7QUFBQSxNQUNBLFNBQVM7QUFBQSxJQUNiLENBQUM7QUFBQSxFQUNMO0FBQ0osQ0FBQzsiLAogICJuYW1lcyI6IFtdCn0K
