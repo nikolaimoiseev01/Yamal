@@ -9,7 +9,6 @@ class IndexPage extends Component
 
     public function render()
     {
-        dd('test');
         return view('livewire.pages.portal.index-page');
     }
 }
