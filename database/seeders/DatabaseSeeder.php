@@ -124,7 +124,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'admin',
             'email' => 'admin@mail.ru',
             'email_verified_at' => now(),
-            'password' => Hash::make(ENV('ADMIN_PASSWORD')),
+            'password' => Hash::make(ENV('J4fx74esreBz')),
             'remember_token' => Str::random(10),
         ]);
         $user->assignRole('admin');
