@@ -78,12 +78,12 @@
                 <div id="video_cover" style="background-image: url('/fixed/video_cover.png')"
                      class="w-full z-20 bg-cover absolute flex items-center justify-center bottom-0 top-0 h-full">
                     <div @click="playVideo('manufactured_video')" class="flex items-center justify-center bg-bright-500 p-5 bg-opacity-80 rounded-full">
-                        <x-heroicon-s-play class="w-9"></x-heroicon-s-play>
+                        <x-heroicon-s-play class="w-9 cursor-pointer"></x-heroicon-s-play>
                     </div>
 
                 </div>
-                <video id="manufactured_video" class="" controls>
-                    <source src="/fixed/test_video.mp4" type="video/mp4">
+                <video id="manufactured_video" class="w-[99%]" controls>
+                    <source src="/fixed/production.mp4" type="video/mp4">
                     Your browser does not support HTML video.
                 </video>
             </div>
@@ -115,7 +115,7 @@
 
     <livewire:components.portal.recipes-view/>
 
-    <section class="safe-area-wrap mb-20 ">
+    <section id="more" class="safe-area-wrap mb-20 ">
         <livewire:components.portal.contact-form/>
     </section>
 </main>
