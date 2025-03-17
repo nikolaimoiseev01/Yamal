@@ -24,7 +24,7 @@ class RecipesView extends Component
         $this->recipeTypes = RecipeType::whereHas('recipe')->get();
     }
 
-    public function updatedrecipeType($value)
+    public function updatedRecipeType($value)
     {
         $this->dispatch('make_recipe_slider');
     }

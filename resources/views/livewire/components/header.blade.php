@@ -8,7 +8,7 @@
             <x-link-simlpe href="#about">О бренде</x-link-simlpe>
             <x-link-simlpe href="#products">Продукты</x-link-simlpe>
             <x-link-simlpe href="#manufacture">Производство</x-link-simlpe>
-            <x-link-simlpe href="$recipes">Рецепты</x-link-simlpe>
+            <x-link-simlpe href="#recipes">Рецепты</x-link-simlpe>
             <x-link-simlpe href="#more">Узнать больше</x-link-simlpe>
         </div>
 

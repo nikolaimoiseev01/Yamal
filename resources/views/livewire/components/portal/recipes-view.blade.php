@@ -18,13 +18,13 @@
                 <div class="relative">
                     <input type="radio" class="hidden peer" name="recipe_type" value="{{$type['id']}}"
                            id="recipe_type_{{$type['id']}}" wire:model.live="recipe_type">
-                    <label for="block recipe_type_{{$type['id']}}"
-                           class="block border border-gray-300 py-3 px-10 rounded-40 transition cursor-pointer peer-checked:bg-bright-500 hover:bg-bright-500">
+                    <label for="recipe_type_{{$type['id']}}"
+                           class="border border-gray-300 py-3 px-10 rounded-40 transition cursor-pointer peer-checked:bg-bright-500 hover:bg-bright-500">
                         {{ mb_strtolower($type['name']) }}
                     </label>
                 </div>
             @endforeach
-                <a href="" class="border border-gray-300 py-3 px-10 flex gap-3 items-center justify-center rounded-40 transition cursor-pointer bg-bright-500 hover:bg-bright-500">
+                <a href="/fixed/YamalGourmet_recepies.pdf" class="border border-gray-300 py-3 px-10 flex gap-3 items-center justify-center rounded-40 transition cursor-pointer bg-bright-500 hover:bg-bright-500">
                     <x-heroicon-o-arrow-long-down class="w-6" />
                     Скачать книгу рецептов
                 </a>
