@@ -5,7 +5,7 @@
         <div class="flex flex-col max-w-sm lg:max-w-none">
             <h2 class="mb-8 lg:hidden">Узнать больше</h2>
             <p class="text-3xl mb-8">Остались вопросы?<br>Есть пожелания?</p>
-            <p class="mb-14">Мы с удовольствием ответим вам по телефону, в мессенджере или по электронной почте</p>
+            <p class="mb-14">Мы с удовольствием ответим вам по телефону или по электронной почте</p>
             <textarea wire:model="question" class="flex-1 resize-none" placeholder="Ваш вопрос"></textarea>
         </div>
         <div
@@ -30,8 +30,6 @@
                 @else
                     <input type="email" name="contact" wire:model="contact" placeholder="Email" required>
                 @endif
-{{--                <input x-show="$wire.contact_method === 'phone'" type="text" name="telephone" wire:model="telephone" placeholder="Телефон">--}}
-{{--                <input x-show="$wire.contact_method === 'email'" type="text" name="email" wire:model="email" placeholder="Email">--}}
             </div>
             <label for="agreement" class="flex items-center gap-2">
                 <input type="checkbox" id="agreement" required>
