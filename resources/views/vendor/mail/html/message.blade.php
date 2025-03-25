@@ -2,14 +2,13 @@
 {{-- Header --}}
 <x-slot:header>
 <x-mail::header :url="config('app.url')">
-{{ config('app.name') }}
+<x-logo-main-black style="width: 70px;"/>
 </x-mail::header>
 </x-slot:header>
 
 {{-- Body --}}
 {{ $slot }}
 
- Subcopy
 @isset($subcopy)
 <x-slot:subcopy>
 <x-mail::subcopy>

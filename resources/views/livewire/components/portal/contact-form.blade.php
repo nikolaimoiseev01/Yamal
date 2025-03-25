@@ -26,9 +26,9 @@
                     </label>
                 </div>
                 @if($contact_method === 'phone')
-                    <input type="text" name="telephone" wire:model="telephone" placeholder="Телефон" required>
+                    <input type="text" name="contact" wire:model="contact" placeholder="Телефон" required>
                 @else
-                    <input type="text" name="email" wire:model="email" placeholder="Email" required>
+                    <input type="email" name="contact" wire:model="contact" placeholder="Email" required>
                 @endif
 {{--                <input x-show="$wire.contact_method === 'phone'" type="text" name="telephone" wire:model="telephone" placeholder="Телефон">--}}
 {{--                <input x-show="$wire.contact_method === 'email'" type="text" name="email" wire:model="email" placeholder="Email">--}}

@@ -1,5 +1,5 @@
-<a href="/" wire:navigate>
-    <svg class="w-[118px]" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 84">
+<a href="{{ENV('APP_URL')}}" wire:navigate>
+    <svg {{$attributes}} class="w-[118px]" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 84">
         <rect width="118" height="84" rx="20" style="fill:#141414"/>
         <path d="M23,67.36V59.17h5.56v1.29H24.1l.35-.36v7.26Z" style="fill:#fff"/>
         <path
