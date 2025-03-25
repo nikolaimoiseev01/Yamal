@@ -9,7 +9,7 @@
             <textarea wire:model="question" class="flex-1 resize-none" placeholder="Ваш вопрос"></textarea>
         </div>
         <div
-              class="gap-12 w-full max-w-[643px] flex flex-col bg-bright-600 bg-opacity-80 py-12 px-28 lg:px-4 rounded-40  lg:flex-col">
+            class="gap-12 w-full max-w-[643px] flex flex-col bg-bright-600 bg-opacity-80 py-12 px-28 lg:px-4 rounded-40  lg:flex-col">
             <input type="text" wire:model="name" placeholder="Имя Фамилия (не обязательно)">
             <div class="flex flex-col">
                 <p class="mb-6">Предпочтительный способ связи</p>
@@ -35,8 +35,13 @@
                 <input type="checkbox" id="agreement" required>
                 <span class="text-gray-500">Я даю согласие на обработку персональных данных</span>
             </label>
-            <x-link-button class="w-full" type="submit">Отправить</x-link-button>
-        </form>
-    </div>
-    {{-- Be like water. --}}
+            @if($sent)
+                <x-link-button class="w-full" disabled type="submit">Успешно отправлено!</x-link-button>
+            @else
+                <x-link-button class="w-full" type="submit">Отправить</x-link-button>
+            @endif
+
+    </form>
+</div>
+{{-- Be like water. --}}
 </div>

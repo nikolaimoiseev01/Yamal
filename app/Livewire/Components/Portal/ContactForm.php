@@ -14,6 +14,7 @@ class ContactForm extends Component
 
     public $question;
 
+    public $sent = false;
     public function render()
     {
         return view('livewire.components.portal.contact-form');
@@ -24,6 +25,6 @@ class ContactForm extends Component
         $subject = 'Сообщение с сайта';
         $question = 'Вопрос: ' . $this->question;
         Mail::to('tomas232@mail.ru')->send(new \App\Mail\ContactForm($this->name, $this->contact, $this->question));
-        dd('SENT!');
+        $this->sent = True;
     }
 }
