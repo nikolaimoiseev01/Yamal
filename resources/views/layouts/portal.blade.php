@@ -25,6 +25,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <meta name="mailru-domain" content="CebaXLOXCOlUVq5r" />
 </head>
 <body class="flex flex-col min-h-screen !scroll-smooth">
 <livewire:components.header/>
