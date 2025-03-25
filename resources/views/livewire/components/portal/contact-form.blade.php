@@ -28,7 +28,7 @@
                 @if($contact_method === 'phone')
                     <input type="text" name="contact" wire:model="contact" placeholder="Телефон" required>
                 @else
-                    <input type="email" name="contact" wire:model="contact" placeholder="Email" required>
+                    <input type="text" name="contact" wire:model="contact" placeholder="Email" required>
                 @endif
             </div>
             <label for="agreement" class="flex items-center gap-2">
