@@ -21,8 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-
-        if (env('APP_ENV') === 'production' && !str_contains(request()->path() !== 'mailru-domainCebaXLOXCOlUVq5r.html')) {
+        if (env('APP_ENV') === 'production' && !str_contains(request()->path(), 'mailru-domainCebaXLOXCOlUVq5r')) {
             \URL::forceScheme('https');
         }
     }
