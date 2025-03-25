@@ -6,7 +6,7 @@
             <h2 class="mb-8 lg:hidden">Узнать больше</h2>
             <p class="text-3xl mb-8">Остались вопросы?<br>Есть пожелания?</p>
             <p class="mb-14">Мы с удовольствием ответим вам по телефону или по электронной почте</p>
-            <textarea wire:model="question" class="flex-1 resize-none" placeholder="Ваш вопрос"></textarea>
+            <textarea wire:model="question" required class="flex-1 resize-none" placeholder="Ваш вопрос"></textarea>
         </div>
         <div
             class="gap-12 w-full max-w-[643px] flex flex-col bg-bright-600 bg-opacity-80 py-12 px-28 lg:px-4 rounded-40  lg:flex-col">
