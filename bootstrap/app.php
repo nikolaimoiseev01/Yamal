@@ -35,10 +35,10 @@ $app->singleton(
     App\Http\Kernel::class
 );
 
-// 👇 Добавляешь здесь
-$app->withMiddleware(function (TrustProxies $middleware) {
-    $middleware->trustProxies(at: '*');
-});
+//// 👇 Добавляешь здесь
+//$app->withMiddleware(function (TrustProxies $middleware) {
+//    $middleware->trustProxies(at: '*');
+//});
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
