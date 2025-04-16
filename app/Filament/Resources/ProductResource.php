@@ -78,7 +78,6 @@ class ProductResource extends Resource
                                 ])->columns(2),
                                 Forms\Components\SpatieMediaLibraryFileUpload::make('image')
                                     ->collection('image')
-                                    ->image()
                                     ->reorderable()
                                     ->label('')
                                     ->imageEditor()
