@@ -21,6 +21,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', IndexPageAlias::class);
 
+
+
 //require __DIR__.'/auth.php';
 //
 //Route::get('/register', RegisterPageAlias::class)->name('register');
