@@ -5,7 +5,7 @@
         <div class="swiper-lazy-preloader text-black-500"></div>
     </div>
     <p class="text-lg text-nowrap font-medium">{{$product['name']}}</p>
-    <p class="mb-4">{{$product['packaging']}}<br>{{$product['weight']}}</p>
+    <p class="mb-4 text-base">{{$product['packaging']}}<br>{{$product['weight']}}</p>
     <a x-on:click="$dispatch('open-right-card', 'product-right-card'); updateProductRightCard({{$product['id']}});"
        class="w-full bg-gray-300 py-2 px-5 flex gap-4 rounded-[20px] items-center justify-center">
         Подробнее
