@@ -64,7 +64,7 @@ class RecipeResource extends Resource
                                     ->panelLayout('grid')
                                     ->imageEditorMode(2)
                                     ->label('')
-                                    ->imageCropAspectRatio('460:280')
+                                    ->imageCropAspectRatio('480:320')
                                     ->columnSpan(1),
                             ])
                     ])->columnSpanFull()
