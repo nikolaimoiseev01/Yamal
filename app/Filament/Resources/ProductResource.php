@@ -84,7 +84,7 @@ class ProductResource extends Resource
                                     ->imageEditorMode(2)
                                     ->label('')
                                     ->panelLayout('grid')
-                                    ->imageCropAspectRatio('460:280')
+                                    ->imageCropAspectRatio('240:240')
                                     ->columnSpan(1),
                             ])
                     ])->columnSpanFull()
